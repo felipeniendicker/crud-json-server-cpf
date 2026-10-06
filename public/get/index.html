@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Listar</h1>
+        <nav><a href="/">Início</a> <a href="/post/">Cadastrar</a> <a href="/get/">Listar</a> <a href="/put/">Atualizar</a> <a href="/delete/">Excluir</a></nav>
+        <form class="busca" onsubmit="buscarDados(); return false;">
+            <label for="cpfBusca">CPF:</label>
+            <input type="text" id="cpfBusca" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <button type="button" onclick="listarDados()">Listar todos</button>
+        <p id="mensagem" role="status"></p>
+        <div class="tabela">
+            <table>
+                <thead><tr><th>ID</th><th>Nome</th><th>Sobrenome</th><th>Email</th><th>Idade</th><th>Telefone</th><th>Rua</th><th>Bairro</th><th>Cidade</th><th>Estado</th><th>RG</th><th>CPF</th></tr></thead>
+                <tbody id="tabela-corpo"></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="/get/get.js"></script>
+</body>
+</html>

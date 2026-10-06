@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Excluir</h1>
+        <nav><a href="/">Início</a> <a href="/post/">Cadastrar</a> <a href="/get/">Listar</a> <a href="/put/">Atualizar</a> <a href="/delete/">Excluir</a></nav>
+        <form class="busca" onsubmit="deletarDados(); return false;">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" required>
+            <button type="submit">Excluir</button>
+        </form>
+        <p id="mensagem" role="status"></p>
+    </main>
+    <script src="/delete/delete.js"></script>
+</body>
+</html>

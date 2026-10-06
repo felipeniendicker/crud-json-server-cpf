@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #222;
+    background-color: #f5f5f5;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+nav { margin-bottom: 24px; }
+nav a { display: inline-block; margin: 0 14px 8px 0; }
+form { max-width: 420px; margin: 20px 0; }
+label { display: block; margin-top: 10px; }
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #888;
+}
+button { padding: 8px 16px; margin-top: 10px; cursor: pointer; }
+fieldset { border: 0; padding: 0; margin: 0; }
+.tabela { overflow-x: auto; margin-top: 20px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #888; padding: 8px; text-align: left; }
+th { background-color: #eee; }
